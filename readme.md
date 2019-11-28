@@ -32,8 +32,12 @@ The title comes from the post title that you're linking to.
 
 The subtext is pulled from one of several different places, in this order. It will first look for an excerpt that you've entered for the post. If the execrpt is empty it will look to meta data from the Yoast SEO plugin. First meta description, then the Facebook description and then the Twitter description.
 
-The same thing happens for the image. First choice is the featured image. Then it will look to Yoast Facebook and Twitter images. 
+The same thing happens for the image. First choice is the featured image. Then it will look to Yoast Facebook and Twitter images.
 
 ## Customization
 
 Do whatever you want with the SASS in `block_links.scss`. What's there is what I'm using on my sites, but you can tweak it however you want.
+
+## Why not a plugin?
+
+This was originally going to be a plugin, but since it's pretty likely you're going to want to add the CSS to your theme instead of loading a separate external file just for this little block it made more sense to just toss the code into `functions.php` instead. 
